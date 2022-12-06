@@ -1,12 +1,16 @@
 public class Queue<T> {
-    Node<T> first, last;
-
+    private Node<T> first, last;
 
     public Queue(){
-        first = last =null;
+        first = last = null;
     }
-    public void equeu(T data){
+
+    public boolean isEmpty(){
+        return first == null;
+    }
+    public void enQueue(T data){
         Node<T> temp = new Node<>(data);
+
         if(isEmpty())
             first = last = temp;
         else{
@@ -14,18 +18,23 @@ public class Queue<T> {
             last = last.getNext();
         }
     }
-    public boolean isEmpty(){
-        return first == null;
-    }
-    public T dequeue(){
+    public T deQueue(){
         if(isEmpty())
             return null;
 
         T temp = first.getData();
         first = first.getNext();
-        if(isEmpty())
+        if(isEmpty()){
             last = null;
+        }
         return temp;
     }
-    
+    @Override
+    public String toString() {
+        if(!isEmpty())
+            return first.toString();
+        else 
+        return "";
+    }
+
 }
