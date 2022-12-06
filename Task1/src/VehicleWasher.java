@@ -10,9 +10,6 @@ public class VehicleWasher {
     Lock lock_line = new ReentrantLock();
     Lock lock_wash = new ReentrantLock();
 
-   
-
-
     public VehicleWasher(int size){
         this.washerLine = new Queue<>();
         wash = new Queue<>();
@@ -23,9 +20,11 @@ public class VehicleWasher {
         for(int i=0; i<washed_v.length; i++)
             washed_v[i] = new Queue<>();
     }
+
     public Queue<Vehicle> getWasherLine() {
         return washerLine;
     }
+    
 
     public void getInLine(Vehicle vehicle) {
        
