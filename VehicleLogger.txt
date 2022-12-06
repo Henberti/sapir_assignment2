@@ -1,0 +1,12 @@
+time pass from start: 4034  license number: 5
+time pass from start: 4038  license number: 2
+time pass from start: 4038  license number: 4
+time pass from start: 4038  license number: 1
+time pass from start: 4038  license number: 3
+time pass from start: 8041  license number: 6
+time pass from start: 8047  license number: 7
+time pass from start: 8047  license number: 9
+time pass from start: 8048  license number: 8
+time pass from start: 8049  license number: 10
+time pass from start: 12051  license number: 11
+time pass from start: 12052  license number: 12

@@ -1,7 +1,9 @@
 public class MiniBus extends Vehicle {
 
-    public MiniBus(int license, VehicleWasher vehicleWasher) {
-        super(license, vehicleWasher);
+    public MiniBus(int license, VehicleWasher vehicleWasher, VehicleLogger log) {
+        super(license, vehicleWasher, log);
     }
+
+    
     
 }

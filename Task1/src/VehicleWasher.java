@@ -15,6 +15,7 @@ public class VehicleWasher {
         wash = new Queue<>();
         washed_v = new Queue[4];
         empty = new Semaphore(5, true);
+        
 
 
         for(int i=0; i<washed_v.length; i++)
@@ -24,7 +25,7 @@ public class VehicleWasher {
     public Queue<Vehicle> getWasherLine() {
         return washerLine;
     }
-    
+
 
     public void getInLine(Vehicle vehicle) {
        
